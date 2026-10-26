@@ -111,15 +111,18 @@ p {
    HEADER / NAVIGATION
    ======================================== */
 
+
 .site-header {
-  position: sticky;
+  position: fixed;
   z-index: 1000;
   top: 0;
+  left: 0;
   width: 100%;
   background: rgba(255, 253, 249, 0.97);
   border-bottom: 1px solid rgba(32, 30, 27, 0.08);
   backdrop-filter: blur(14px);
 }
+
 
 .nav-wrapper {
   min-height: 94px;
