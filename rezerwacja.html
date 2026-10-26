@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Umów wizytę w Studio M&D w Wieluniu. Wybierz usługę i skontaktuj się z nami.">
+  <title>Umów wizytę | Studio M&D Wieluń</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">M&D</span>
+        <span class="logo-caption">STUDIO BEAUTY</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html">Strona główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="zespol.html">Nasz zespół</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="o-salonie.html">O salonie</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="rezerwacja.html" class="nav-cta" aria-current="page">Umów wizytę</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="subpage">
+
+    <section class="subpage-hero">
+      <div class="container">
+        <p class="subpage-eyebrow">STUDIO M&D · WIELUŃ</p>
+        <h1>Umów wizytę</h1>
+        <p class="subpage-intro">
+          Zrób coś dla siebie. Wypełnij formularz,
+          a skontaktujemy się z Tobą w sprawie terminu.
+        </p>
+      </div>
+    </section>
+
+    <section class="subpage-section">
+      <div class="container booking-layout">
+
+        <div class="booking-description">
+          <p class="subpage-eyebrow">ZAPRASZAMY</p>
+          <h2>Twoja chwila piękna zaczyna się tutaj.</h2>
+          <p>
+            Wybierz interesującą Cię usługę i podaj dane kontaktowe.
+            Uzgodnimy dogodny termin podczas kontaktu zwrotnego.
+          </p>
+
+          <div class="booking-detail">
+            <span class="booking-detail-label">MIEJSCE</span>
+            <p>Studio M&D, Wieluń</p>
+          </div>
+
+          <div class="booking-detail">
+            <span class="booking-detail-label">JAK TO DZIAŁA?</span>
+            <p>
+              Wysłanie formularza nie oznacza jeszcze
+              potwierdzenia rezerwacji.
+            </p>
+          </div>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+
+          <h2>Formularz kontaktowy</h2>
+
+          <div class="form-field">
+            <label for="client-name">Imię i nazwisko *</label>
+            <input type="text" id="client-name" name="name"
+              autocomplete="name" required
+              placeholder="Wpisz swoje imię i nazwisko">
+          </div>
+
+          <div class="form-field">
+            <label for="client-phone">Numer telefonu *</label>
+            <input type="tel" id="client-phone" name="phone"
+              autocomplete="tel" required
+              placeholder="Np. 500 000 000">
+          </div>
+
+          <div class="form-field">
+            <label for="client-email">Adres e-mail</label>
+            <input type="email" id="client-email" name="email"
+              autocomplete="email"
+              placeholder="twoj@email.pl">
+          </div>
+
+          <div class="form-field">
+            <label for="client-service">Wybierz usługę *</label>
+            <select id="client-service" name="service" required>
+              <option value="">Wybierz usługę</option>
+              <option value="Stylizacja paznokci">Stylizacja paznokci</option>
+              <option value="Stylizacja brwi">Stylizacja brwi</option>
+              <option value="Pielęgnacja">Pielęgnacja</option>
+              <option value="Inna usługa">Inna usługa</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="client-date">Preferowana data</label>
+            <input type="date" id="client-date" name="date">
+          </div>
+
+          <div class="form-field">
+            <label for="client-message">Dodatkowe informacje</label>
+            <textarea id="client-message" name="message" rows="4"
+              placeholder="Napisz, jeśli masz dodatkowe pytania..."></textarea>
+          </div>
+
+          <label class="form-consent">
+            <input type="checkbox" name="consent" required>
+            <span>
+              Wyrażam zgodę na kontakt w sprawie mojego zapytania. *
+            </span>
+          </label>
+
+          <button type="submit" class="button button-dark booking-submit">
+            Wyślij zapytanie
+          </button>
+
+          <p class="form-note">
+            Pola oznaczone * są wymagane.
+          </p>
+
+          <p class="form-status" id="form-status" role="status"
+            aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© Studio M&D · Wieluń</p>
+      <a href="kontakt.html">Dane kontaktowe</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

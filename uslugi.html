@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Usługi | Studio M&D</title>
+  <meta name="description" content="Poznaj ofertę usług Studio M&D w Wieluniu.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="subpage">
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">M&D</span>
+        <span class="logo-caption">STUDIO BEAUTY</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Otwórz menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html">Strona główna</a>
+        <a href="uslugi.html" aria-current="page">Usługi</a>
+        <a href="zespol.html">Zespół</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="o-salonie.html">O salonie</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="rezerwacja.html" class="nav-cta">Rezerwacja</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="services-hero">
+      <div class="container">
+        <p class="services-eyebrow">STUDIO M&D · WIELUŃ</p>
+        <h1>Nasze usługi</h1>
+        <p class="services-intro">
+          Poznaj naszą ofertę, wybierz interesującą Cię kategorię
+          i sprawdź szczegóły dostępnych usług.
+        </p>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="container">
+
+        <div class="services-heading">
+          <h2>Znajdź coś dla siebie</h2>
+          <p>Wybierz kategorię, aby zobaczyć usługi.</p>
+        </div>
+
+        <div class="service-filters" aria-label="Kategorie usług">
+          <button class="service-filter active" type="button"
+            data-filter="all" aria-pressed="true">
+            Wszystkie
+          </button>
+
+          <button class="service-filter" type="button"
+            data-filter="paznokcie" aria-pressed="false">
+            Paznokcie
+          </button>
+
+          <button class="service-filter" type="button"
+            data-filter="brwi" aria-pressed="false">
+            Brwi i rzęsy
+          </button>
+
+          <button class="service-filter" type="button"
+            data-filter="pielegnacja" aria-pressed="false">
+            Pielęgnacja
+          </button>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card" data-category="paznokcie">
+            <div class="service-number">01</div>
+            <h3>Stylizacja paznokci</h3>
+            <p class="service-description">
+              Zadbane dłonie, piękny kształt i styl dopasowany
+              do Twoich upodobań.
+            </p>
+
+            <button class="service-toggle" type="button"
+              aria-expanded="false">
+              Poznaj szczegóły
+            </button>
+
+            <div class="service-details" hidden>
+              <p>
+                Stylizacja dopasowana do Twojego stylu
+                i oczekiwanego efektu.
+              </p>
+              <p><strong>Czas trwania:</strong> do ustalenia</p>
+              <p><strong>Cena:</strong> do ustalenia</p>
+              <a href="rezerwacja.html" class="service-booking">
+                Umów wizytę
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="brwi">
+            <div class="service-number">02</div>
+            <h3>Stylizacja brwi i rzęs</h3>
+            <p class="service-description">
+              Podkreślenie naturalnego piękna i oprawy oczu.
+            </p>
+
+            <button class="service-toggle" type="button"
+              aria-expanded="false">
+              Poznaj szczegóły
+            </button>
+
+            <div class="service-details" hidden>
+              <p>
+                Stylizacja dopasowana do indywidualnych potrzeb
+                i oczekiwanego efektu.
+              </p>
+              <p><strong>Czas trwania:</strong> do ustalenia</p>
+              <p><strong>Cena:</strong> do ustalenia</p>
+              <a href="rezerwacja.html" class="service-booking">
+                Umów wizytę
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="pielegnacja">
+            <div class="service-number">03</div>
+            <h3>Pielęgnacja</h3>
+            <p class="service-description">
+              Czas na relaks i troskę o siebie w przyjemnej atmosferze.
+            </p>
+
+            <button class="service-toggle" type="button"
+              aria-expanded="false">
+              Poznaj szczegóły
+            </button>
+
+            <div class="service-details" hidden>
+              <p>
+                Pielęgnacja dobierana do potrzeb i oczekiwań
+                każdej klientki.
+              </p>
+              <p><strong>Czas trwania:</strong> do ustalenia</p>
+              <p><strong>Cena:</strong> do ustalenia</p>
+              <a href="rezerwacja.html" class="service-booking">
+                Umów wizytę
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="paznokcie">
+            <div class="service-number">04</div>
+            <h3>Usługi dodatkowe</h3>
+            <p class="service-description">
+              Poznaj dodatkowe możliwości i dobierz usługę
+              do swoich potrzeb.
+            </p>
+
+            <button class="service-toggle" type="button"
+              aria-expanded="false">
+              Poznaj szczegóły
+            </button>
+
+            <div class="service-details" hidden>
+              <p>
+                Skontaktuj się z salonem, aby uzyskać informacje
+                o dodatkowych usługach.
+              </p>
+              <p><strong>Czas trwania:</strong> zależny od usługi</p>
+              <p><strong>Cena:</strong> do ustalenia</p>
+              <a href="kontakt.html" class="service-booking">
+                Zapytaj o szczegóły
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="services-note">
+          Szczegółowe informacje o usługach i cenach można uzyskać,
+          kontaktując się z salonem.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="services-cta">
+      <div class="container">
+        <p class="services-eyebrow">CZAS DLA CIEBIE</p>
+        <h2>Podaruj sobie chwilę przyjemności</h2>
+        <p>
+          Wybierz dogodny termin i zaplanuj swoją wizytę w Studio M&D.
+        </p>
+        <a href="rezerwacja.html" class="service-booking">
+          Umów wizytę
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© Studio M&D. Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
